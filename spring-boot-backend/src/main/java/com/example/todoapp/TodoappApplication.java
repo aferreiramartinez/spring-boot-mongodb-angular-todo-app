@@ -4,8 +4,6 @@ import com.example.todoapp.repositories.TodoRepository;
 import com.example.todoapp.models.*;
 import com.example.todoapp.controllers.TodoController;
 
-import java.util.HashMap;
-import java.util.Map;
 import org.bson.Document;
 
 import org.springframework.beans.factory.annotation.Autowired;

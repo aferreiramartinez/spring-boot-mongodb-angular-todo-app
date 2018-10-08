@@ -16,9 +16,9 @@ public class Todo {
     @Id 
     private String id;
 
-    // @NotBlank // make sure that the todo’s title is not blank
-    // @Size(max=100)
-    // @Indexed(unique=true) //creates a unique index on title field
+    @NotBlank // make sure that the todo’s title is not blank
+    @Size(max=100)
+    @Indexed(unique=true) //creates a unique index on title field
     private String title;
 
     @NotBlank
@@ -128,7 +128,7 @@ public class Todo {
 //         setDataByFiscalQuarter((Document) instrumentData.get("DataByFiscalQuarter"));
 //         setCompanyName((String)instrumentData.get("CompanyName"));
 //         setCompanyDescription((String)instrumentData.get("CompanyDescription"));
-//         String ticker = (String)instrumentData.get("Ticker");
+//         String ticker = (String)instrumentData.get("ticker");
 //         setTicker(ticker);
 //         setDailyData((Document) instrumentData.get("DailyUpdated"));
 //         setShareholders((ArrayList<Document>)instrumentData.get("Top-10-Owners"));

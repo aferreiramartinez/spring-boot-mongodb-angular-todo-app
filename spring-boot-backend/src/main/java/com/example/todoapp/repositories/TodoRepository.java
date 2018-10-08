@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface TodoRepository extends MongoRepository<Todo, String> {
-    // public Todo findByTitle(String title);
-    public Todo findByTickerIgnoreCase(String Ticker);
+    public Todo findByTitleIgnoreCase(String title);
+    public Todo findByTickerIgnoreCase(String ticker);
     // public List<Todo> findByTitle(String title);
 }
